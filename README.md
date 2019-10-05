@@ -1,2 +1,2 @@
 Git commands learning project# learning
-This is another commit12
+This is master commit
