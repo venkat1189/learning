@@ -1,8 +1,10 @@
 FROM python:3-slim
 
-COPY . /delphi/
-
 WORKDIR /delphi
 
-CMD ["python", "test.py"]
+RUN pip install flask
+
+COPY . /delphi
+
+CMD ["python", "run.py"]
 
