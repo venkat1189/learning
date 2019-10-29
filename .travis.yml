@@ -3,3 +3,5 @@ services:
 	- docker
 before-install:
 	- docker build -t sample-app .
+script:
+	- docker run -it -p 80:5000 sample-app
