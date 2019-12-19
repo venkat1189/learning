@@ -1,0 +1,21 @@
+{
+  "taskDefinition": {
+    "family": "sample-app",
+    "containerDefinitions": [
+      {
+        "name": "sample-app",
+        "image": "191547400616.dkr.ecr.us-east-2.amazonaws.com/sample-app:latest",
+        "cpu": 100,
+        "portMappings": [
+          {
+            "protocol": "tcp",
+            "containerPort": 5000,
+            "hostPort": 80
+          }
+        ],
+        "memory": 128,
+        "essential": true
+      }
+    ]
+  }
+}
