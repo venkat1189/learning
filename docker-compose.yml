@@ -9,8 +9,8 @@ services:
           - 80:80
           - 443:443
         environment:
-          - Server_Host=0.0.0.0
-#        network_mode: host
+          - Server_Host=18.237.216.73
+        network_mode: host
 
       app-img:
         container_name: app-image-new
@@ -18,7 +18,7 @@ services:
         build: ./test-app
         ports:
           - "4000:9000"
-#        network_mode: host
+        network_mode: host
 
 
 
