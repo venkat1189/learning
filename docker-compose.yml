@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+      prod-server:
+        #        image: nginx:1.15
+        container_name: prd_nginx
+        build: ./server
+        restart: "unless-stopped"
+        ports:
+          - 80:80
+          - 443:443
+        environment:
+          - Server_Host=0.0.0.0
+#        network_mode: host
+
+      app-img:
+        container_name: app-image-new
+        restart: "unless-stopped"
+        build: ./test-app
+        ports:
+          - "4000:9000"
+#        network_mode: host
+
+
+
