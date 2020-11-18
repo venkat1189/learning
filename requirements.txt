@@ -1,7 +1,7 @@
 sklearn
 matplotlib
-pandas
 numpy
+pandas
 scipy
 seaborn
 json
