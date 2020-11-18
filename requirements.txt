@@ -1,7 +1,7 @@
-sklearn
 matplotlib
 numpy
+sklearn
 pandas
 scipy
-seaborn
 json
+seaborn
